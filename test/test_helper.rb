@@ -1,8 +1,12 @@
-ENV["RAILS_ENV"] ||= "test"
-require_relative "../config/environment"
-require "rails/test_help"
+# This class is used for testing purposes with ActiveSupport in Rails.
+# It extends ActiveSupport::TestCase to provide additional functionality
+
+ENV['RAILS_ENV'] ||= 'test'
+require_relative '../config/environment'
+require 'rails/test_help'
 
 module ActiveSupport
+  # class
   class TestCase
     # Run tests in parallel with specified workers
     parallelize(workers: :number_of_processors)
