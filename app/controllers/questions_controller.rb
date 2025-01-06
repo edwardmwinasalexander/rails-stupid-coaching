@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 # It includes methods for displaying, creating, editing, and deleting questions.
+# class
 class QuestionsController < ApplicationController
   def ask
     @questions = ['I met a girl last night', 'Can I eat some pizza?', 'I am going to work right now!']
